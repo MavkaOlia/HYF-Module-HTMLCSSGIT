@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  height: 800px;
+  width: 800px;
+  font-family: "Roboto", sans-serif;
+  font-size: smaller;
+  letter-spacing: 1px;
+  grid-template-areas:
+    "header header"
+    "left-sidebar right-sidebar";
+  grid-template-columns: 1fr 2.5fr;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header {
+  background: rgb(44, 60, 73);
+  grid-area: header;
+  height: 150px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+.left-sidebar {
+  background: rgb(228, 228, 228);
+  grid-area: left-sidebar;
+  height: 650px;
+  text-align: center;
+  padding: 20px;
+}
+.right-sidebar {
+  background: rgb(245, 245, 245);
+  grid-area: right-sidebar;
+  height: 650px;
+}
+img {
+  float: left;
+  border-radius: 50%;
+
+  width: 120px;
+  padding: 15px;
+}
+.container {
+  width: 70%;
+  background-color: rgb(195, 195, 195);
+  height: 10px;
+  margin: 10px auto;
+  border-radius: 5%;
+}
+
+.skills {
+  text-align: right;
+
+  color: white;
+  background: rgb(44, 60, 73);
+  height: 100%;
+  border-radius: 5% 0 0 5%;
+}
+
+.html {
+  width: 50%;
+}
+.css {
+  width: 40%;
+}
+.js {
+  width: 15%;
+}
+h3 {
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+h4 {
+  padding-top: 10px;
+}
+.left-sidebar p {
+  padding-top: 5px;
+}
+#contacts {
+  padding-top: 5px;
+}
+a {
+  padding-bottom: 5px;
+}
+h1 {
+  padding: 15px;
+}
+table {
+  padding: 15px;
+}
+.right-sidebar li,
+.right-sidebar p {
+  color: rgb(121, 121, 121);
+}
+.dates {
+  font-size: 0.7em;
+  padding-top: 20px;
+
+  white-space: nowrap;
+  text-align: center;
+}
+td {
+  padding: 0 5px;
+}
+ul {
+  padding-left: 5px;
+  padding-top: 5px;
+}
