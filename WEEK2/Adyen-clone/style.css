@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0 5vw;
+  letter-spacing: 0.1rem;
+}
+header {
+  display: flex;
+
+  align-items: center;
+  gap: 3rem;
+  height: 5vw;
+  padding: 5px 0;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+li {
+  list-style: none;
+
+  font-weight: 200;
+  flex-grow: 2;
+}
+
+.logo {
+  fill: #0abf53;
+}
+.end-header {
+  display: flex;
+  gap: 1rem;
+
+  font-weight: 200;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  background-color: #0abf53;
+  color: white;
+  border-color: #0abf53;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  border-radius: 6px;
+  border-style: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+button:hover {
+  background-color: rgb(8, 143, 62);
+}
+.first-section {
+  display: flex;
+  gap: 1;
+}
+.first-section > * {
+  max-width: 50%;
+}
+
+.left-first-section {
+  padding: 10vw 10vw 0 0;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: 0.1rem;
+}
+.left-first-section p {
+  font-weight: 200;
+  margin: 15px 0;
+  line-height: 2rem;
+}
+.brands {
+  display: flex;
+
+  padding: 35px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* I couldn't make a button with hidden nav-bar*/
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: smaller;
+  }
+  .nav-bar,
+  .end-header {
+    display: none;
+  }
+  .first-section {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+  video {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+}
