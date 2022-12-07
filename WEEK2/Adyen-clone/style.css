@@ -57,12 +57,13 @@ button {
 button:hover {
   background-color: rgb(8, 143, 62);
 }
-.first-section {
+.first-section,
+.third-section {
   display: flex;
   gap: 1;
 }
-.first-section > * {
-  /*max-width: 50%;*/
+.first-section,
+.third-section > * {
   flex: 1;
 }
 
@@ -88,6 +89,54 @@ h1 {
 }
 
 /* I couldn't make a button with hidden nav-bar*/
+
+.second-section {
+  background-color: rgb(243, 246, 249);
+  padding: 8vw 5vw;
+  margin-top: 5vw;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+  line-height: 2rem;
+  gap: 3vw;
+  font-size: smaller;
+}
+.feature > img {
+  width: 24px;
+  padding: 1vw 0;
+}
+h2 {
+  font-weight: 600;
+  font-size: 48px;
+  padding: 2vw 0;
+}
+a {
+  color: #0abf53;
+}
+a:hover {
+  text-decoration: none;
+}
+
+#finance {
+  background-color: rgba(10, 191, 83, 0.12);
+  border-radius: 6px;
+  color: #0abf53;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 6px 12px;
+  padding-top: 6px !important;
+  width: fit-content;
+}
+#terminal {
+  max-width: 50vw;
+}
+.inner-section {
+  padding: 10vw 10vw 0 0;
+}
 @media only screen and (max-width: 768px) {
   body {
     font-size: smaller;
@@ -99,16 +148,24 @@ h1 {
   .end-header {
     display: none;
   }
-  .first-section {
+  .first-section,
+  .third-section {
     flex-direction: column;
     padding: 0;
   }
 
-  video {
+  video,
+  #terminal {
     width: 100%;
     margin: 3vw 0;
   }
   h1 {
     font-size: 1.2rem;
+  }
+  .features {
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 32px;
   }
 }
